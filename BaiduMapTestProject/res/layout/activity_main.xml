@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" 
+    >
+	
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+   		>
+   		
+	    <EditText
+	        android:id="@+id/poiEditText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="你要找兴趣点？在这里输入" 
+	        />
+	    
+	    <Button
+	        android:id="@+id/poiBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="查询" 
+	        />
+	    
+	</LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+   		>
+   		
+	    <EditText
+	        android:id="@+id/poiRadiusEditText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="输入查询半径" 
+	        />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="KM" 
+	        />
+    
+	</LinearLayout>
+	
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    >
+	    
+	    <com.baidu.mapapi.map.MapView
+	        android:id="@+id/mapView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:clickable="true"
+	        />
+	    
+	    <Button
+	        android:id="@+id/locationBtn"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginTop="10dip"
+	        android:background="@drawable/custom_loc" 
+	        />
+	    
+	</RelativeLayout>
+</LinearLayout>
